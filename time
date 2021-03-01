@@ -1,3 +1,16 @@
 
 
 while :; do echo -n -e  "`date +%T``sleep 1`\b\b\b\b\b\b\b\b"; done &
+
+
+#! /usr/bin/python3
+
+print ("context-type: text/html")
+print()
+
+import subprocess
+
+cal = subprocess.getoutput("cal")
+
+print(cal)
+
